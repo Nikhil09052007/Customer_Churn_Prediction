@@ -31,6 +31,8 @@ st.divider()
 
 predict_button = st.button("Predict")
 
+st.divider()
+
 if predict_button:
     gender_selected =1 if gender == 'Female' else 0
 
@@ -44,6 +46,10 @@ if predict_button:
 
     predicted = "Yes" if prediction == 1 else "No"
 
+    st.balloons()
+
     st.write(f"Predicted: {predicted}")
 
+else:
+    st.write("Please enter the values and predict button.")
 # Our model is ready, Let's hit stremlit run app.py in terminal 🙂
