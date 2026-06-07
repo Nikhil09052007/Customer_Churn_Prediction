@@ -25,7 +25,7 @@ tenure = st.number_input(f"Enter Tenure",min_value=0, max_value=130, value=10)
 
 monthly_charge = st.number_input("Enter Monthly Charges", min_value=30, max_value=150)
 
-gender = st.selectbox("Enter the Gender,["Male","Female"]")
+gender = st.selectbox("Enter the Gender",["Male","Female"])
 
 st.divider()
 
@@ -46,4 +46,4 @@ if predict_button:
 
     st.write(f"Predicted: {predicted}")
 
-# Our model is ready, Let's hit stremlit.run app.py in terminal 🙂
+# Our model is ready, Let's hit stremlit run app.py in terminal 🙂
